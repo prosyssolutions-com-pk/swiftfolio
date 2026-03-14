@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # swiftfolio
 Premium Template
 =======
@@ -32,4 +32,4 @@ Coming soon
 ## Author
 
 Zuhair Faruqi
->>>>>>> 189d386 (initial files)
+
