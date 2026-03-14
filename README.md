@@ -26,7 +26,7 @@ Coming soon
 
 ## Screenshot
 
-<img src="repo/screenshot/full-screenshot.png" width="500" title="Swiftfolio Web" alt="main screenshot"
+<img src="repo/screenshot/full-screenshot.png" width="1000" title="Swiftfolio Web" alt="main screenshot"
     >
 
 ## Author
