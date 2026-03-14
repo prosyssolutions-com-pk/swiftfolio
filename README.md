@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# swiftfolio
+Premium Template
+=======
 # Swiftfolio
 
 Swiftfolio is a modern responsive portfolio template for web designers and developers.
@@ -20,6 +24,12 @@ JavaScript
 
 Coming soon
 
+## Screenshot
+
+<img src="repo/screenshot/full-screenshot.png" width="500" title="Swiftfolio Web" alt="main screenshot"
+    >
+
 ## Author
 
 Zuhair Faruqi
+>>>>>>> 189d386 (initial files)
