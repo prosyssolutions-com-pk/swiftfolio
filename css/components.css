@@ -1,0 +1,320 @@
+/**************************/
+/*        card            */
+/**************************/
+.card {
+    background-color: var(--color-bg-light);
+    border: 1px solid var(--color-border);
+    padding: var(--space-sm);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+/**************************/
+/*        button          */
+/**************************/
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: var(--text-base);
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: white;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+}
+
+.btn--primary:hover {
+    text-decoration: none;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+}
+.btn--secondary {
+    background-color: var(--color-accent);
+    color: #ffffff;
+}
+
+.btn--secondary:hover {
+    background-color: #d97706;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+/**************************/
+/*        navbar          */
+/**************************/
+/* NAV LINK BASE */
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-link.active {
+  color: val(--color-primary);
+}
+/* HOVER COLOR */
+.nav-links a:hover {
+    color: var(--color-primary);
+    
+}
+
+/* UNDERLINE EFFECT */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width 0.4s ease;
+}
+
+/* UNDERLINE ANIMATION */
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* HAMBURGER BUTTON */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* LINES */
+.nav-toggle span {
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-text-primary);
+    transition: all 0.3s ease;
+}
+/**************************/
+/*        about           */
+/**************************/
+
+.about-image img{
+box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+
+/**************************/
+/*        services        */
+/**************************/
+
+.service-card{
+text-align:center;
+padding:2rem;
+}
+
+.service-card svg{
+width:40px;
+height:40px;
+color:var(--color-primary);
+margin-bottom:1rem;
+}
+.service-card:hover svg{
+transform:scale(1.2);
+transition:0.3s;
+}
+/**************************/
+/*       testimonials     */
+/**************************/
+.testimonial-card {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-bg-light);
+}
+
+.testimonial-card img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.testimonial-card h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.testimonial-card span {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+}
+
+/**************************/
+/*        portfolio       */
+/**************************/
+/* Portfolio */
+.portfolio-image {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0,0,0,0.45);
+    color: white;
+    font-weight: 600;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    pointer-events: none; /* FIX */
+}
+
+
+.portfolio-item:hover img {
+    
+    transform: scale(1.08) rotate(5deg);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+/* add new lines */
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    
+}
+
+.portfolio-item:hover img {
+    
+    transform: scale(1.08)  rotate(2deg);
+}
+/* portfolio view large */
+.portfolio-modal{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.85);
+display:flex;
+align-items:center;
+justify-content:center;
+
+opacity:0;
+pointer-events:none;
+transition:0.3s;
+z-index:2000;
+}
+
+.portfolio-modal.active{
+opacity:1;
+pointer-events:auto;
+}
+
+.portfolio-modal img{
+max-width:80%;
+border-radius:8px;
+}
+
+/**************************/
+/*        contact         */
+/**************************/
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+
+    padding: 2rem;
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid var(--color-border);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.9rem 1rem;
+
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+
+    font-family: inherit;
+    font-size: var(--text-base);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+/* scroll progress */
+.scroll-progress{
+position:fixed;
+top:0;
+left:0;
+height:4px;
+background:var(--color-primary);
+width:0%;
+z-index:2000;
+}
+
+
+/* Button Micro Interaction (Ripple Effect) */
+
+.btn{
+position:relative;
+overflow:hidden;
+}
+
+.ripple{
+position:absolute;
+border-radius:50%;
+background:rgba(255,255,255,0.4);
+transform:scale(0);
+animation:ripple 0.6s linear;
+}
+
+@keyframes ripple{
+to{
+transform:scale(4);
+opacity:0;
+}
+}
+

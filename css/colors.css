@@ -1,0 +1,30 @@
+:root {
+
+    /* Primary Brand Color */
+    --color-primary: #2563eb;
+
+    /* Accent Color */
+    --color-accent: #f59e0b;
+
+    /* Text Colors */
+    --color-text-primary: #111827;
+    --color-text-secondary: #6b7280;
+
+    /* Background Colors */
+    --color-bg-light: #ffffff;
+    --color-bg-alt: #f9fafb;
+
+    /* Border */
+    --color-border: #e5e7eb;
+    /* overlay */
+    --color-overlay: rgba(0,0,0,0.5);
+    /* for messages */
+    --color-success: #16a34a;
+    --color-error: #dc2626;
+    --color-warning: #f59e0b;
+
+}
+body {
+    background-color: var(--color-bg-light);
+    color: var(--color-text-primary);
+}
